@@ -17,7 +17,6 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
-
 <StackPane fx:id="gamesRoot" alignment="TOP_CENTER" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.faforever.client.game.CustomGamesController">
    <children>
       <GridPane>
@@ -36,7 +35,9 @@
                      <children>
                         <FlowPane hgap="10.0" maxWidth="1.7976931348623157E308" vgap="10.0" HBox.hgrow="ALWAYS">
                            <children>
-                            <JFXButton fx:id="createGameButton" defaultButton="true" minWidth="-Infinity" mnemonicParsing="false" onAction="#onCreateGameButtonClicked" styleClass="create-game-button" text="%games.create" />
+                               <JFXButton fx:id="createGameButton" defaultButton="true" minWidth="-Infinity"
+                                          mnemonicParsing="false" onAction="#onCreateGameButtonClicked"
+                                          text="%games.create"/>
                             <JFXCheckBox fx:id="showPasswordProtectedGamesCheckBox" mnemonicParsing="false" text="%games.showPasswordProtectedGames" />
                             <JFXCheckBox fx:id="showModdedGamesCheckBox" mnemonicParsing="false" text="%games.showModdedGames" />
                             <JFXComboBox fx:id="chooseSortingTypeChoiceBox" />
